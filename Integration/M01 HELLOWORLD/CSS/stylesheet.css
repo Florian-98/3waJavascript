@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+/*permet de defiler plus doucement*/
+body  {
+  font-family: Arial, helvetica, sans-serif;
+  /*permet de changer la police*/
+}
+ .color .red {
+  color: red;
+}
+.color .blue {
+  color: blue;
+}
+.color .green {
+  color: green;
+}
+.bg .red {
+  background-color: red;
+}
+.bg .blue {
+  background-color: blue;
+}
+.bg .green
+ {
+   background-color: green;
+ }
+/*permet de changer les couleurs de texte et de fond*/
+.color h4 span {
+  color: grey;
+  font-family: arial;
+}
+.bg h4 span {
+  color: grey;
+  font-family: monospace;
+}

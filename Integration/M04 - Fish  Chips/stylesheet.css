@@ -1,0 +1,56 @@
+body {
+  background-image: url(./img/fond.png);
+  font-family: "Open-sans"
+  margin: 0;
+}
+
+header {
+text-align: center;
+}
+
+.bandeau {
+  background-color: rgb(41, 179, 180);
+  border-style: solid;
+  border-color: rgb(23, 118, 116);
+  border-left: none;
+  border-right: none;
+  overflow: hidden;
+  margin-right : none;
+  margin-left: none;
+  }
+  .bouton {
+    text-decoration-line: none;
+    color: white;
+    padding: 1em;
+  }
+  nav {
+    margin-bottom: 1em;
+  }
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width : 50%;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: "Slabo";
+}
+
+section {
+  background-color: rgb(185, 219, 231);
+}
+h2 {
+  font-family:
+}
+
+.article {
+  display: inline-block;
+  width: calc(50% - 2em);
+  margin: 1em;
+  vertical-align: top;
+}
+.imgsection {
+  border-radius: 50%;
+}

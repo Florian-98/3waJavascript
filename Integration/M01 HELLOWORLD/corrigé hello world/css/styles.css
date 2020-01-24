@@ -1,0 +1,68 @@
+/*****************************************************************
+Organisation de la feuille de styles :
+
+  Définir les styles par défaut appliqués à toutes les balises
+  Organiser le code dans l'ordre d'apparition des balises dans le document
+  Créer des séparations avec des commentaires
+
+*******************************************************************/
+
+/****************************************************************
+	Styles par défaut
+*****************************************************************/
+
+/* Scroll doux */
+html {
+	scroll-behavior : smooth;
+}
+
+/* Définir un jeu de polices de caractères pour l'ensemble du document */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles des titres
+
+Sélecteur de descendant : cibler les span enfant d'une balise h3
+*/
+h3 span {
+  color : gray;
+}
+
+
+footer {
+  text-align: center;
+}
+
+
+/****************************************************************
+	Classes
+*****************************************************************/
+
+.color .red {
+  color : red;
+}
+
+.bg .red {
+  background-color : red;
+}
+
+.color .blue {
+  color : blue;
+}
+
+.bg .blue {
+  background-color : blue;
+}
+
+.color .green {
+  color : green;
+}
+
+.bg .green {
+  background-color : green;
+}
+
+.bg h3 span {
+  font-family: monospace;
+}
