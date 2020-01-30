@@ -1,0 +1,125 @@
+* {
+  box-sizing : border-box;
+
+}
+
+
+html {
+  font-size : 62.5%; /* 62.5% de 16px (par défaut ! ) =  10px */
+  scroll-behavior : smooth;
+}
+
+body {
+  font-family: "Open Sans", Arial;
+  font-size : 1.6rem;
+  margin: auto;
+  width: 80%;
+  background-color: rgb(242, 241, 244);
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(39, 173, 152);
+  padding: 1em;
+  color: white;
+}
+
+img {
+  max-width : 100%;
+  height : auto;
+  vertical-align: top;
+}
+
+nav a {
+  color: white;
+  text-decoration-line: none;
+  font-size: 2.5rem;
+  font-family: "PT Sans Narrow";
+  display: inline-block;
+  width: calc(100% / 3);
+
+}
+
+a:hover,
+a:focus,
+a:active {
+
+}
+
+h1,h2,h2,h3,h4,h5,h6 {
+  font-family: "PT Sans Narrow";
+  font-weight: normal;
+  text-transform : uppercase;
+  border-bottom: 1px solid #30a894;
+  color: #30a894;
+}
+
+
+h1 {
+  font-size : 4rem;
+}
+
+h2 {
+  font-size : 2.4rem;
+}
+
+.container {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+section {
+ width: 70%;
+ display: inline-block;
+ vertical-align: top;
+}
+
+aside {
+  display: inline-block;
+  background-color: #b8dcb1;
+  color: #314c35;
+  padding: 2rem 2rem;
+  width: 28%;
+  margin-left: 2%;
+
+}
+
+
+
+@media screen and (max-width : 1023px) {
+
+  .container {
+    margin-right: 10%;
+    margin-left : 10%;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+  }
+
+  aside {
+    display: block;
+    width: 100%;
+  }
+
+  section {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  aside {
+    display: none;
+  }
+
+
+
+
+}

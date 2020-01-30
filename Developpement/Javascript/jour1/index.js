@@ -33,3 +33,9 @@ alert (user);
 
 user = "laurent";
 document.write (" bonjour " + user);
+
+--------------------------------------------------------------------------------
+
+let a = 30;
+let phrase = ("la variable =" + a);
+console.log(phrase);
