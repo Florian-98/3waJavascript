@@ -1,0 +1,13 @@
+h1 {
+  color:blue
+}
+table {
+  border-style: solid;
+  border-width: thin;
+
+}
+ td {
+  border-style: solid;
+  border-width: thin;
+  padding: 2em;
+}
