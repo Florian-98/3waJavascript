@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+@@font-face {
+
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%
+}
+
+body {
+  font-family: arial;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+
+}
+
+h1 h2 h3 h4 {
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+figure {
+  margin: 0;
+}
+
+/**********BANNIERE******************************/
+
+/****************MAIN*************************************/
+
+/************************FOOTER**********************************/
+
+.banner {
+
+}
+
+nav {
+
+}
+
+nav-link {
+
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+/*********RESPONSIVE TABLETTE ET MOBILE************/
+
+
+@media screen and (max-width : 1023px) {
+
+
+
+
+/********* TABLETTE*********/
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+
+
+
+/****************MOBILE*******************/

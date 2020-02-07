@@ -145,7 +145,13 @@ for (let i = 1; i <= utilisateur ;i++) {
   document.write("<tr>");
 
     for (let j = 1; j <= utilisateur ;j++) {
-      document.write("<td>"+i*j+"</td>");
+      if (i == j) {
+          document.write("<td class=\"egalite\">"+i*j+"</td>");
+      } else {
+          document.write("<td>"+i*j+"</td>");
+      }
+
+
     }
 
   document.write("</tr>");

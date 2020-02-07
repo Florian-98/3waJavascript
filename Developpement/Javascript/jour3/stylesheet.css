@@ -1,13 +1,30 @@
-h1 {
-  color:blue
+body {
+  background-color: rgb(63, 73, 115);
+  text-align: center;
 }
+
+h1 {
+  color: white;
+  font-family:monospace;
+  text-transform: capitalize;
+}
+
 table {
-  border-style: solid;
+  border-style:groove;
   border-width: thin;
+  box-shadow: 0em 0em 2em white;
+  margin-top: 5em;
 
 }
+
  td {
   border-style: solid;
   border-width: thin;
   padding: 2em;
+  background-color: orangered;
+
+}
+
+ td.egalite {
+  background-color: yellow!important;
 }

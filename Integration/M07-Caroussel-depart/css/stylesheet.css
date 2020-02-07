@@ -1,0 +1,101 @@
+body {
+  min-height: 100vh;
+  background-color: rgb(85, 85, 85);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  }
+
+img {
+  max-width: 100%;
+  height : auto;
+  vertical-align: middle;
+}
+
+header {
+  background-color: rgb(68, 68, 68);
+  padding: 2em;
+}
+
+header a {
+  color: white;
+  text-decoration-line: none;
+  font-size: 2em;
+}
+
+main {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.carrousel {
+  position: relative;
+}
+
+.slider-figure {
+  display: none;
+  position: relative;
+  margin: 0;
+  border: 1em solid rgb(218, 219, 223);
+  border-radius: 1rem;
+}
+
+.active {
+  display: block;
+}
+
+.slider-picture {
+
+}
+
+
+.slider-legend {
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3.5em;
+  background-color: rgb(218, 219, 223);
+  opacity: 0.7;
+  width: 100%;
+
+}
+
+
+.nav-link {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.60em;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.2em;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: blue;
+  opacity: 0.4;
+}
+
+.nav-link i {
+  color: white;
+}
+
+.gauche {
+  left: -1.2em;
+}
+
+.droite {
+  right: -1.2em;
+}
+
+footer {
+  padding: 0.5em;
+  text-align: center;
+  color: white;
+  background-color: rgb(68, 68, 68);
+  font-size: 1.5em
+
+}
