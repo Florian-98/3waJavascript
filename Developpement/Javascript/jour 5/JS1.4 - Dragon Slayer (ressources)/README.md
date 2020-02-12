@@ -12,13 +12,13 @@ Maquette
 La maquette graphique du jeu a été réalisée par un graphiste et un intégrateur à déjà développé la partie HTML/CSS. Vous pouvez donc reprendre directement son travail.
 A vous de remplacer la partie dynamique (le déroulement de la partie) pour la générer en javascript.
 
-_Remarque :_ vous disposez pour le moment d'un seul outil pour écrire du code HTML en javascript : **document.write()**. Quelles conséquences pour l'emplacement du **script** dans la page ? Fera-t-on toujours de cette manière ? Votre formateur est là pour répondre avec vous à ces questions. 
+_Remarque :_ vous disposez pour le moment d'un seul outil pour écrire du code HTML en javascript : **document.write()**. Quelles conséquences pour l'emplacement du **script** dans la page ? Fera-t-on toujours de cette manière ? Votre formateur est là pour répondre avec vous à ces questions.
 
 Préparation du jeu
 ------------------
 
 Au lancement du jeu le joueur doit choisir :
-	
+
 	- le niveau de difficulté du jeu : facile, normal, difficile
 
 Puis les points de vie de chaque personnage sont tirés au hasard:
@@ -37,7 +37,7 @@ Puis les points de vie de chaque personnage sont tirés au hasard:
 	-----------------
 	* PV dragon : 100 + 10D10
 	* PV joueur : 100 + 7D10
-	
+
 	--> Affichage des PV de départ
 
 Déroulement de la partie
@@ -48,25 +48,25 @@ A chaque tour de jeu, les étapes suivantes ont lieu :
 1) On détermine qui est le plus rapide et attaque l'autre : c'est l'initiative
 
 	Calcul de l'initiative : chaque personnage lance 10D6. Celui qui a le plus grand score attaque l'autre.
-	
+
 2) On détermine le nombre de points de dommage causés par l'attaquant à son adversaire
 
 	a) Si c'est le dragon qui attaque :
 
-		Les points de dommages sont égaux à 3D6. 
+		Les points de dommages sont égaux à 3D6.
 		Ensuite ces points de dommages sont majorés ou minorés en fonction de la difficulté et de la classe du héro.
 
 		* Niveau facile : les points de dommages sont minorés de 2D6%.
-		* Niveau difficile : les points de dommages sont majorés de 1D6%.
+		* Niveau difficile : les points de dommages sont majorés de 1D6.
 
 	b) Si c'est le héro qui attaque
 
-		Les points de dommages sont égaux à 3D6. 
+		Les points de dommages sont égaux à 3D6.
 		Ensuite ces points de dommages sont majorés ou minorés en fonction de la difficulté et de la classe du héro.
 
-		* Niveau facile : les points de dommages sont majorés de 2D6%.
-		* Niveau difficile : les points de dommages sont minorés de 1D6%.
-		
+		* Niveau facile : les points de dommages sont majorés de 2D6.
+		* Niveau difficile : les points de dommages sont minorés de 1D6.
+
 3) Affichage du journal du jeu : que s'est-il passé pendant le tour ?
 
     - Affichage du numéro du tour
@@ -88,15 +88,15 @@ Une fois que cette première version fonctionne correctement, on l'enrichit au f
 
 Il est plus intéressant - et rassurant - d'avoir rapidement une version simplifée qui fonctionne que l'on enrichit par la suite !
 
-Lorsque le nombre de lignes de code commencent à devenir important, pensez à découper le code en fonctions de manière logique ! 
+Lorsque le nombre de lignes de code commencent à devenir important, pensez à découper le code en fonctions de manière logique !
 Les fonctions permettent de ne pas répéter de code mais également de structurer le code pour le rendre plus lisible et plus maintenable.
-	
+
 BONUS
 =====
 
 Bonus n°1 : images du chevalier et du dragon amochés
 ----------------------------------------------------
-Lors de l'affichage de l'état du jeu, si les points de vie des personnages sont inférieurs à 30% de leurs points de vie de départ, 
+Lors de l'affichage de l'état du jeu, si les points de vie des personnages sont inférieurs à 30% de leurs points de vie de départ,
 l'image du personnage est l'image "amochée" (knight-wounded.png et dragon-wounded.png).
 
 Bonus n°2 : classes de personnages

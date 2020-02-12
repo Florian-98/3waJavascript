@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+main {
+  text-align: center;
+}
+
+section {
+  padding: 2.5em;
+}
+
+a{
+  text-decoration-line: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+
+}
+/***** CLASSES *******************************/
+
+[class*=fa] {
+  font-size: 2em;
+  display: block;
+  color: rgb(252, 129, 226);
+}
+
+.offre {
+  border: 1px dashed;
+  display: flex;
+
+  justify-content: center;
+  width: 40%;
+  margin: 2em;
+  text-align: center;
+}
+
+.offre > h3 {
+  background-color: rgb(33, 62, 78);
+  color: white;
+  padding: 1.5em;
+  width: 100%;
+}
+
+@media screen and (min-width : 1024px) {
+
+  .offre {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em;
+    text-align: center;
+  }
+
+  .offre > h3 {
+
+
+
+  }
+
+
+}
+
+/***** Bannière *******************************/
+
+.banner {
+  text-align: center;
+}
+
+.banner a {
+  margin : 2.5rem;
+}
+
+.banner-nav a {
+  display: block;
+  text-decoration-line: none;
+  color: black;
+  font-weight: normal;
+  font-size: 1.5em;
+  font-family: "Candal"
+}
+
+@media screen and (min-width : 1024px) {
+
+  .banner, .banner-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}
+
+main > header {
+  color: white;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  text-align: center;
+  min-height: 50vh;
+  padding: 6em;
+
+}
+
+main > header > h1 {
+  font-size: 3em;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main > header > p {
+  font-size: 2em;
+  font-family: "Candal";
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+input {
+  border: none;
+  width: 100%;
+  background-color: pink;
+  padding: 1.5em;
+  color: white;
+  font-family: "Open Sans";
+}
+
+h1, h2, h3, h4 {
+  font-family: "Candal";
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.8em;
+  border-left: dashed 1px;
+  border-top: dashed 1px;
+  border-right: dashed 1px;
+}
+
+h3 {
+  color: rgb(252, 129, 226);
+  font-size: 1.2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(33, 62, 78);
+  color: white;
+  padding: 2em;
+}
+
+footer a {
+  color: white;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/*********RESPONSIVE TABLETTE ET DESKTOP************/
+
+
+@media screen and (min-width : 1024px) {
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section h2 {
+    flex-basis: 100%;
+  }
+
+  section article {
+    flex : 1;
+  }
+
+
+
+
+
+}

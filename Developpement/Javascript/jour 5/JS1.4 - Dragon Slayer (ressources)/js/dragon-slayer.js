@@ -13,6 +13,13 @@ const dragon = {
 
 };
 
+let niveau = '';
+
+do {
+  niveau = window.prompt("Quel niveau choisissez vous?").toLowerCase();
+} while (niveau != 'facile' && niveau != 'normal' && niveau != 'difficile');
+
+console.log("Vous avez choisi le niveau " + niveau);
 
 
 
@@ -47,24 +54,40 @@ const nombreDeFacesInitiative = 6;
 const nombreDeDesInitiative = 10;
 
 function initiative(){
-  const initiativeJoueur = lancelesDes(nombreDeDesInitiative, nombreDeFacesInitiative)
-  const initiativeDragon = lancelesDes(nombreDeDesInitiative, nombreDeFacesInitiative)
+  const initiativeJoueur = lancelesDes(nombreDeDesInitiative, nombreDeFacesInitiative);
+  const initiativeDragon = lancelesDes(nombreDeDesInitiative, nombreDeFacesInitiative);
 
   return {initiativeJoueur, initiativeDragon}
 }
 
-
+let nombreDeFacesAttaque = 6;
+let nombreDeDesAttaqueDragon = 0;
+let nombreDeDesAttaqueJoueur = 0;
 //On détermine le nombre de points de dommage causés par l'attaquant à son adversaire
+if (niveau == "facile") {
+  nombreDeDesAttaqueDragon = 1;
+  nombreDeDesAttaqueJoueur = 5;
+} else if (niveau == "difficile") {
+  nombreDeDesAttaqueDragon = 4;
+  nombreDeDesAttaqueJoueur = 2;
+} else {
+  nombreDeDesAttaqueDragon = 3;
+  nombreDeDesAttaqueJoueur = 3;
+}
 
-const nombreDeFacesAttaque = 6;
-const nombreDeDesAttaque = 3;
-const attaqueDragon = lancelesDes(nombreDeDesAttaque, nombreDeFacesAttaque)
-const attaqueJoueur = lancelesDes(nombreDeDesAttaque, nombreDeFacesAttaque)
+
+
+const attaqueDragon = lancelesDes(nombreDeDesAttaqueDragon, nombreDeFacesAttaque);
+const attaqueJoueur = lancelesDes(nombreDeDesAttaqueJoueur, nombreDeFacesAttaque);
+
+
+let round = 1;
 
 
 
 function play() {
   let initiativeDepart =  initiative();
+  console.log("tour" + round)
   if (initiativeDepart.initiativeDragon > initiativeDepart.initiativeJoueur) {
   //Dragon commence
     chevalier.pointDevie = (chevalier.pointDevie - attaqueDragon)
@@ -73,19 +96,30 @@ function play() {
 
   }  else {
   //joueur commence
-    dragon.pointDevie = (dragon.pointDevie - attaqueJoueur)
-    console.log("vous avez attaqué le dragon. Il reste au dragon " + dragon.pointDevie)
+      dragon.pointDevie = (dragon.pointDevie - attaqueJoueur)
+      console.log("vous avez attaqué le dragon. Il reste au dragon " + dragon.pointDevie)
   }
+ round++
 
 }
 
 while (chevalier.pointDevie > 0 && dragon.pointDevie > 0) {
   play();
+
+  if (chevalier.pointDevie > 0 && dragon.pointDevie <= 0) {
+    console.log("Vous remportez la partie")
+
+} else if (chevalier.pointDevie <= 0 && dragon.pointDevie > 0) {
+    console.log("le Dragon remporte la partie")
+  } else {
+      console.log("egalité")
+
+  }
 }
 
-if {
-  
-}
+
+
+
 
 
 
