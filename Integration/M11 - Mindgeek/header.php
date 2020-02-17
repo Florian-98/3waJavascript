@@ -1,8 +1,14 @@
+<?php include('head.php') ?>
+
 <header class="banner">
   <a href="./">
     <img src="img/logo.png" alt="logo mindgeek">
   </a>
-  <nav class="banner-nav">
+
+  <label for="mobile"><i class="fas fa-bars" id="burger"></i></label>
+  <input type="checkbox" id="mobile" role="menubar">
+  <nav class="banner-nav" id="wrap">
+
     <?php
       $nav = [
         "mutualise.html" => "Serveur Mutualisé",
