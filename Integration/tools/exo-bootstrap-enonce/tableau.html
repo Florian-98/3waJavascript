@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <title>Exercice bootstrap</title>
+
+  </head>
+  <body>
+    <header class="d-flex justify-content-between bg-dark align-middle p-3" >
+      <a href="index.html"><h1 class="text-light">Mon blog</h1></a>
+      <div class="input-group mb-3 w-auto">
+        <input type="text" class="form" placeholder="">
+        <button type="button" class="btn btn-outline-secondary">Rechercher</button>
+      </div>
+      <a href="#"><button type="button" class="btn btn-outline-secondary"><i class="fas fa-power-off"></i> Se deconnecter</button></a>
+    </header>
+    <main class="d-flex justify-content-between">
+      <aside class="w-25 bg-light">
+        <nav class="d-flex flex-column w-100 p-2 nav-pills">
+          <a href="#" class="nav-link p-2"><i class="fas fa-home"></i> Tableau de bord</a>
+          <a href="#"class="nav-link p-2"><i class="fas fa-folder"></i> Pages</a>
+          <a href="tableau.html" class="nav-link active p-2 "><i class="fas fa-paragraph"></i> Articles</a>
+          <a href="#"class="nav-link p-2"><i class="fas fa-tags"></i> Tags</a>
+          <a href="#" class="nav-link p-2"><i class="fas fa-file"></i> Fichiers</a>
+          <a href="#"class="nav-link p-2"><i class="fas fa-users"></i> Utilisateurs</a>
+          <a href="#" class="nav-link p-2"><i class="fas fa-cogs"></i> Paramètres</a>
+        </nav>
+      </aside>
+      <section class="w-75">
+        <button type="button" class="btn btn-primary float-right m-2"><i class="fas fa-plus"></i> Ajouter</button>
+        <h2 class="m-3">Articles</h2>
+
+        <table class="table table-bordered m-auto" style = "width: 95%">
+          <thead>
+            <tr>
+              <th scope="col">Titre</th>
+              <th scope="col">Date de Modification</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-light">
+              <td scope="row" style = "width:30%">Lorem ipsum dolor sit amet, consectetur</td>
+              <td style ="width: 20%">22/07/19</td>
+              <td style ="width: 30%"><button type="button" class="btn btn-outline-secondary"><i class="fas fa-pen"></i> Modifier</button><button type="button" class="btn btn-outline-danger m-1"><i class="fas fa-trash"></i> Supprimer</button></td>
+
+            </tr>
+            <tr>
+              <td scope="row">Lorem ipsum dolor sit amet, consectetur</td>
+              <td>20/07/19</td>
+              <td><button type="button" class="btn btn-outline-secondary"><i class="fas fa-pen"></i> Modifier</button><button type="button" class="btn btn-outline-danger m-1"><i class="fas fa-trash"></i> Supprimer</button></td>
+
+            </tr>
+            <tr class="bg-light">
+              <td scope="row">Lorem ipsum dolor sit amet, consectetur</td>
+              <td>18/07/19</td>
+              <td><button type="button" class="btn btn-outline-secondary"><i class="fas fa-pen"></i> Modifier</button><button type="button" class="btn btn-outline-danger m-1"><i class="fas fa-trash"></i> Supprimer</button></td>
+
+            </tr>
+            <tr>
+              <td scope="row">Lorem ipsum dolor sit amet, consectetur</td>
+              <td>17/07/19</td>
+              <td><button type="button" class="btn btn-outline-secondary"><i class="fas fa-pen"></i> Modifier</button><button type="button" class="btn btn-outline-danger m-1"><i class="fas fa-trash"></i> Supprimer</button></td>
+
+            </tr>
+            <tr class="bg-light">
+              <td scope="row">Lorem ipsum dolor sit amet, consectetur</td>
+              <td>06/07/19</td>
+              <td><button type="button" class="btn btn-outline-secondary"><i class="fas fa-pen"></i> Modifier</button><button type="button" class="btn btn-outline-danger m-1"><i class="fas fa-trash"></i> Supprimer</button></td>
+
+            </tr>
+            <tr>
+              <td scope="row">Lorem ipsum dolor sit amet, consectetur</td>
+              <td>03/07/19</td>
+              <td><button type="button" class="btn btn-outline-secondary"><i class="fas fa-pen"></i> Modifier</button><button type="button" class="btn btn-outline-danger m-1"><i class="fas fa-trash"></i> Supprimer</button></td>
+
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <nav aria-label="Page navigation example" class="d-flex justify-content-center m-4">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+
+
+
+    <footer class="text-center bg-dark p-4 fixed-bottom ">
+      <p class="text-light">
+        <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">
+        <img alt="Propriété de la 3W Academy" style="border-width:0" height="40" width="40" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png" />
+        </a><br/>
+        <span>Cet exercice</span> de <a href="https://3wa.fr">3W Academy</a> est mis à disposition <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">pour l'usage personnel des étudiants, Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International</a>.<br />Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr" rel="cc:morePermissions">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="http://www.justine-muller.fr">Justine Muller</a>.
+      </p>
+    </footer>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

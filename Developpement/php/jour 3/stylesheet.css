@@ -1,0 +1,46 @@
+h1 {
+  font-size: 6em;
+  color: white;
+  text-align: center;
+}
+
+fieldset {
+  border: dashed white 5px;
+  border-radius: 10px;
+}
+body {
+  background-image: url(en-avant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+legend {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+}
+
+input {
+font-size: 2em;
+border-radius: 15px;
+color: blue;
+background-color: white;
+margin: 2em;
+}
+
+select {
+  font-size: 2em;
+  border-radius: 15px;
+  color: black;
+  background-color: white;
+}
+
+h3 {
+  font-size: 4em;
+  text-align: center;
+  color: red;
+  border: solid;
+  background-color: white;
+  border-radius: 10px;
+}
