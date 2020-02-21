@@ -1,5 +1,22 @@
 <?php
 
+try {
+  $pdo = new PDO('mysql:host=127.0.0.1;dbname=todolist','root', 'troiswa');
+} catch (PDOException $erreur) {
+    die($erreur-> getMessage());
+}
+
+$pdo->exec('SET NAMES utf8');
+
+$query = $pdo->prepare('SELECT * FROM tasks');
+$query->execute();
+//$results = $query->fetch();
+
+// while($result = $query->fetch(PDO:: FETCH_ASSOC)) {
+//   // var_dump($result);
+// }
+
+$result1 = $query->fetchAll(PDO::FETCH_ASSOC);
 
 
 function sanitize($data) {
@@ -33,31 +50,43 @@ if(isset($_POST['priorite']) && !empty($_POST['priorite'])) {
  }
 
  if(isset($_POST['titre']) && !empty($_POST['titre'])) {
-   $dataTasks = [
+  $dataTasks = [
     $titre,
     $priorite,
     $date,
     $description,
   ];
 
-  $csv = fopen('todolist.csv', 'a');
-  fputcsv($csv, $dataTasks);
-  fclose($csv);
+
+  $stmt = $pdo->prepare("INSERT INTO tasks (deadline, titre, description, priorite) VALUES (:deadline, :titre, :description, :priorite)");
+
+  $stmt->bindparam(':deadline', $date);
+  $stmt->bindparam(':titre', $titre);
+  $stmt->bindparam(':description', $description);
+  $stmt->bindparam(':priorite', $priorite);
+
+  $stmt->execute();
+  unset($date);
+  unset($titre);
+  unset($description);
+  unset($priorite);
+
 }
 
+//}
+//
 
 
 
 
-$csv = fopen('todolist.csv', 'r');
+// $csv = fopen('todolist.csv', 'r');
+//
 
-$tasks = [];
+// while($task = fgetcsv($csv)) {
+//   $tasks[] = $task;
+// }
 
-while($task = fgetcsv($csv)) {
-  $tasks[] = $task;
-}
-
-fclose($csv);
+// fclose($csv);
 
 
 

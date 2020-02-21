@@ -11,8 +11,6 @@
   <body>
     <?php include('todolist.php') ?>
 
-    <?php //var_dump($tasks); ?>
-
     <h1 class="text-center"><div class="spinner-grow text-success" role="status">
       <span class="sr-only">Loading...</span>
     </div><div class="spinner-grow text-danger" role="status">
@@ -30,10 +28,10 @@
     </h1>
     <main class="d-flex justify-content-center">
       <div class="shadow-lg p-5 mb-5 bg-white rounded">
-        <form class="w-100 " method="post">
+        <form class="w-100 " method="post" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
           <div class="form-group">
             <label for="FormControlInput1">Titre de la tache</label>
-            <input type="text" class="form-control" id="FormControlInput1" name="titre" placeholder="Entrez votre titre ici" value="">
+            <input type="text" class="form-control" id="FormControlInput1" name="titre" placeholder="Entrez votre titre ici">
           </div>
           <div class="form-group">
             <label for="exampleFormControlSelect1">Selectionnez l'importance de la tache</label>
@@ -49,9 +47,9 @@
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Description de la tache</label>
-            <input type="text" name="description" class="form-control" id="exampleFormControlTextarea1" rows="3" ></input>
+            <input type="text" name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></input>
           </div>
-          <input type="submit" class="btn btn-outline-success m-3"></input>
+          <a href="./"><input type="submit" class="btn btn-outline-success m-3"></input></a>  
           <input type="reset" class="btn btn-outline-danger"></input>
         </form>
       </div>
@@ -68,14 +66,15 @@
           <tbody>
 
 
-              <?php foreach($tasks as $task) : ?>
-                <tr>
-              <th scope="row"></th>
-                  <td><?= $task[0] ?></td>
-                  <td><?= $task[1] ?></td>
-                  <td><?= $task[2] ?></td>
-              </tr>
-              <?php endforeach ?>
+            <?php foreach($result1 as $task) : ?>
+              <tr>
+            <th scope="row"></th>
+                <td><?= $task['titre'] ?></td>
+                <td><?= $task['priorite'] ?></td>
+                <td><?= $task['deadline'] ?></td>
+
+            </tr>
+            <?php endforeach ?>
 
 
           </tbody>
@@ -95,13 +94,13 @@
           <tbody>
 
 
-                          <?php foreach($tasks as $task) : ?>
+                          <?php foreach($result1 as $task) : ?>
                             <tr>
                           <th scope="row"></th>
-                              <td><?= $task[0] ?></td>
-                              <td><?= $task[1] ?></td>
-                              <td><?= $task[2] ?></td>
-                              <td><?= $task[3] ?></td>
+                              <td><?= $task['titre'] ?></td>
+                              <td><?= $task['priorite'] ?></td>
+                              <td><?= $task['deadline'] ?></td>
+                              <td><?= $task['description'] ?></td>
                           </tr>
                           <?php endforeach ?>
 
