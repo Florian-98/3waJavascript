@@ -4,7 +4,7 @@
   @include bg-variant(".bg-#{$color}", $value, true);
 }
 
-@if $enable-gradients {
+@if $enable-gradients = true {
   @each $color, $value in $theme-colors {
     @include bg-gradient-variant(".bg-gradient-#{$color}", $value);
   }

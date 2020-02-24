@@ -1,12 +1,8 @@
 <?php
 
-try {
-  $pdo = new PDO('mysql:host=127.0.0.1;dbname=todolist','root', 'troiswa');
-} catch (PDOException $erreur) {
-    die($erreur-> getMessage());
-}
+include('connexion.php');
 
-$pdo->exec('SET NAMES utf8');
+$pdo =  connexion();
 
 $query = $pdo->prepare('SELECT * FROM tasks');
 $query->execute();
@@ -19,14 +15,7 @@ $query->execute();
 $result1 = $query->fetchAll(PDO::FETCH_ASSOC);
 
 
-function sanitize($data) {
-  $data = trim($data);
-  $data = htmlentities($data);
-  $data = htmlspecialchars($data);
 
-  return $data;
-
-}
 
  if(isset($_POST['titre']) && !empty($_POST['titre'])) {
     $titre = sanitize($_POST['titre']);
@@ -70,6 +59,8 @@ if(isset($_POST['priorite']) && !empty($_POST['priorite'])) {
   unset($titre);
   unset($description);
   unset($priorite);
+
+  header('Location: http://localhost/Developpement/php/jour3/todolist/');
 
 }
 

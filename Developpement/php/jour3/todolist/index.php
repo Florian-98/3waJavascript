@@ -28,7 +28,7 @@
     </h1>
     <main class="d-flex justify-content-center">
       <div class="shadow-lg p-5 mb-5 bg-white rounded">
-        <form class="w-100 " method="post" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
+        <form class="w-100 " method="post" action="todolist.php">
           <div class="form-group">
             <label for="FormControlInput1">Titre de la tache</label>
             <input type="text" class="form-control" id="FormControlInput1" name="titre" placeholder="Entrez votre titre ici">
@@ -49,7 +49,7 @@
             <label for="exampleFormControlTextarea1">Description de la tache</label>
             <input type="text" name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></input>
           </div>
-          <a href="./"><input type="submit" class="btn btn-outline-success m-3"></input></a>  
+          <a href="./"><input type="submit" class="btn btn-outline-success m-3"></input></a>
           <input type="reset" class="btn btn-outline-danger"></input>
         </form>
       </div>
@@ -69,7 +69,7 @@
             <?php foreach($result1 as $task) : ?>
               <tr>
             <th scope="row"></th>
-                <td><?= $task['titre'] ?></td>
+                <td><a href="tasks/?task_id=<?= $task['id'] ?>"><?= $task['titre'] ?></a></td>
                 <td><?= $task['priorite'] ?></td>
                 <td><?= $task['deadline'] ?></td>
 
@@ -94,15 +94,15 @@
           <tbody>
 
 
-                          <?php foreach($result1 as $task) : ?>
-                            <tr>
-                          <th scope="row"></th>
-                              <td><?= $task['titre'] ?></td>
-                              <td><?= $task['priorite'] ?></td>
-                              <td><?= $task['deadline'] ?></td>
-                              <td><?= $task['description'] ?></td>
-                          </tr>
-                          <?php endforeach ?>
+          <?php foreach($result1 as $task) : ?>
+            <tr>
+          <th scope="row"></th>
+              <td><?= $task['titre'] ?></td>
+              <td><?= $task['priorite'] ?></td>
+              <td><?= $task['deadline'] ?></td>
+              <td><?= $task['description'] ?></td>
+          </tr>
+          <?php endforeach ?>
 
 
           </tbody>

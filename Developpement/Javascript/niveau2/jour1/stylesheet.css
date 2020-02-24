@@ -1,0 +1,14 @@
+.rectangle {
+  width: 400px;
+  height: 300px;
+  border-radius: 50px;
+  background-color: royalblue;
+}
+
+.good {
+  background-color: limegreen;
+}
+
+.important {
+  background-color: firebrick;
+}
