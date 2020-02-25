@@ -1,0 +1,25 @@
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li:hover {
+  background-color: grey;
+}
+
+img {
+  margin: 1em;
+  padding: 0.5em;
+
+}
+
+body {
+
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selected {
+  background-color: forestgreen;
+}

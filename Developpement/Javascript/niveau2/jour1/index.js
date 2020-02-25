@@ -4,7 +4,7 @@ let button = document.getElementById('toggle-rectangle')
 
 div.addEventListener('mouseenter', function() {
     div.classList.add('important');
-    console.log('mouse enter');
+
 });
 
 div.addEventListener('mouseout', function() {
@@ -12,18 +12,22 @@ div.addEventListener('mouseout', function() {
 });
 
 div.addEventListener('dblclick', function() {
+  if (div.classList.contains('good')) {
+    return div.classList.remove('good');
+  }
+
   div.classList.add('good');
 
 });
 
-div.addEventListener('dblclick', function() {
-  div.classList.remove('good');
 
-
-});
 
 button.addEventListener('click', function() {
-  div.style.display = 'none'
-  
+  if (div.style.display == 'none') {
+    return div.style.display = 'block';
+
+  }
+
+  div.style.display = 'none';
 
 })
