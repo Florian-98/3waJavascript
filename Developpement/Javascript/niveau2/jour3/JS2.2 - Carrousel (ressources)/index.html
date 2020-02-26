@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="utf-8">
+      <title>Sliders</title>
+      <link rel="stylesheet" href="css/normalize.min.css">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/slider.css">
+  </head>
+  <body>
+    <main>
+
+
+      <h1>Sliders, les mondes parallèles ;-) </h1>
+
+
+      <div class="carrousel">
+        <a href="#" id="toolbar-toggle"><i class="far fa-eye-slash"></i> Barre d'outils</a>
+        <nav id="toolbar">
+          <button type="button" name="reculer" id="precedent"><i class="fas fa-fast-backward"></i></button>
+          <button type="button" name="démarer/arrêter" id="slider-toggle"><i class="fas fa-play"></i></button>
+          <button type="button" name="avancer"  id="suivant"><i class="fas fa-fast-forward"></i></button>
+          <button type="button" name="aleatoire" id="slider-random"><i class="fas fa-random"></i></button>
+        </nav>
+        <div class="slider-layout">
+
+
+          <figure class="slider-figure active">
+            <figcaption>Tags</figcaption>
+            <img class="slider-picture" src="images/1.jpg" alt="" id="slide">
+            <ul class="dots_commands"><!--
+        	--><li><a title="Afficher la slide 1" href="#sl_i1" class="js-dots-color" data-slide="0">Slide 1</a></li><!--
+        	--><li><a title="Afficher la slide 2" href="#sl_i2" data-slide="1">Slide 2</a></li><!--
+        	--><li><a title="Afficher la slide 3" href="#sl_i3" data-slide="2">Slide 3</a></li><!--
+        	--><li><a title="Afficher la slide 4" href="#sl_i4" data-slide="3">Slide 4</a></li><!--
+          --><li><a title="Afficher la slide 4" href="#sl_i4" data-slide="4">Slide 5</a></li><!--
+          --><li><a title="Afficher la slide 4" href="#sl_i4" data-slide="5">Slide 6</a></li>
+            </ul>
+        </div>
+
+
+      </div>
+    </main>
+    <script src="js/slider.js">
+
+    </script>
+  </body>
+</html>
