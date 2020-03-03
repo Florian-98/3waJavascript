@@ -1,7 +1,5 @@
 <?php
 
-include("../todolist.php");
-
 if(isset($_POST) && !empty($_POST)) {
     $task_id = sanitize($_POST['task_id']);
 
@@ -10,4 +8,3 @@ if(isset($_POST) && !empty($_POST)) {
 
     header('Location: http://localhost/Developpement/php/jour3/todolist/');
 }
- ?>

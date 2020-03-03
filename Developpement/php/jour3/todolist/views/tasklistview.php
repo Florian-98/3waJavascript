@@ -1,23 +1,13 @@
 <?php
 
-include('../todolist.php');
+include('../database/connexion.php');
+include('../helpers/helpers.php');
+include('../tasks/gettask.php');
+include('../tasks/deletetask.php');
+include('../requests/posttasks.php');
 
 
-$task_id = $_GET['task_id'];
-
-$task_id = sanitize($task_id);
-
-$requete = $pdo->prepare('SELECT * FROM tasks WHERE id = ' . $task_id);
-$requete->execute();
-$task = $requete->fetch(PDO::FETCH_ASSOC);
-
-
-
-
-
-
-
-?>
+ ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
