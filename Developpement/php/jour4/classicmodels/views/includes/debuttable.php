@@ -15,11 +15,9 @@
 </h1>
 <main class="d-flex justify-content-center">
 
-  </tbody>
-    </table>
-    </div>
 
     <table class="table">
+
       <thead class="thead-dark">
         <tr>
           <th scope="col">#</th>
@@ -32,10 +30,38 @@
           <?php if($_SERVER['QUERY_STRING']) : ?>
             <th scope="col"> nom du client </th>
           <?php endif ?>
-
+          <?php if($_SERVER['QUERY_STRING']) : ?>
+            <th scope="col">N°client </th>
+          <?php endif ?>
+          <?php if($_SERVER['QUERY_STRING']) : ?>
+            <th scope="col">Nom du contact</th>
+          <?php endif ?>
+          <?php if($_SERVER['QUERY_STRING']) : ?>
+            <th scope="col">Adresse</th>
+          <?php endif ?>
+          <?php if($_SERVER['QUERY_STRING']) : ?>
+            <th scope="col">Ville</th>
+          <?php endif ?>
+          <?php if($_SERVER['QUERY_STRING']) : ?>
+            <th scope="col">Pays</th>
+          <?php endif ?>
+          <?php if($_SERVER['QUERY_STRING']) : ?>
+            <th scope="col">Code produit</th>
+          <?php endif ?>
+          <?php if($_SERVER['QUERY_STRING']) : ?>
+            <th scope="col">Quantitée commandée</th>
+          <?php endif ?>
+          <?php if($_SERVER['QUERY_STRING']) : ?>
+            <th scope="col">Prix / pièce</th>
+          <?php endif ?>
+          <?php if($_SERVER['QUERY_STRING']) : ?>
+            <th scope="col">Total HT</th>
+          <?php endif ?>
+          <?php if($_SERVER['QUERY_STRING']) : ?>
+            <th scope="col">Montant TVA</th>
+          <?php endif ?>
           <?php if(!$_SERVER['QUERY_STRING']) : ?>
-            <th scope="col"> Voir plus </th>
+            <th scope="col">Voir plus</th>
           <?php endif ?>
         </tr>
       </thead>
-    <tbody>

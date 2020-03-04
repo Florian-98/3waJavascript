@@ -14,7 +14,37 @@
       <td><a href="?orderNumber=<?= $order['orderNumber'] ?>" class="btn btn-primary">Voir plus</a></td>
     <?php endif ?>
     <?php if($_SERVER['QUERY_STRING']) : ?>
-      <td scope="col"> nom du client </td>
+      <td scope="col"><?= $order2['customerName']; ?> </td>
+    <?php endif ?>
+    <?php if($_SERVER['QUERY_STRING']) : ?>
+      <td scope="col"> <?= $order2['customerNumber']; ?></td>
+    <?php endif ?>
+    <?php if($_SERVER['QUERY_STRING']) : ?>
+      <td scope="col"> <?= $order2['contactLastName']; $order2['contactFirstName']; ?></td>
+    <?php endif ?>
+    <?php if($_SERVER['QUERY_STRING']) : ?>
+      <td scope="col"> <?= $order2['addressLine1']; ?></td>
+    <?php endif ?>
+    <?php if($_SERVER['QUERY_STRING']) : ?>
+      <td scope="col"> <?= $order2['city']; ?></td>
+    <?php endif ?>
+    <?php if($_SERVER['QUERY_STRING']) : ?>
+      <td scope="col"> <?= $order2['country']; ?></td>
+    <?php endif ?>
+    <?php if($_SERVER['QUERY_STRING']) : ?>
+      <td scope="col"> <?= $order2['productCode']; ?></td>
+    <?php endif ?>
+    <?php if($_SERVER['QUERY_STRING']) : ?>
+      <td scope="col"> <?= $order2['quantityOrdered']; ?></td>
+    <?php endif ?>
+    <?php if($_SERVER['QUERY_STRING']) : ?>
+      <td scope="col"> <?= $order2['priceEach']; ?></td>
+    <?php endif ?>
+    <?php if($_SERVER['QUERY_STRING']) : ?>
+      <td scope="col"> <?= $order2['TotalHT']; ?></td>
+    <?php endif ?>
+    <?php if($_SERVER['QUERY_STRING']) : ?>
+      <td scope="col"> <?= $order2['MontantTVA']; ?></td>
     <?php endif ?>
   </tr>
 

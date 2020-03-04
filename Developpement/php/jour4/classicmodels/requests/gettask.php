@@ -27,7 +27,7 @@ try {
     $order = $stmt->fetch(PDO::FETCH_ASSOC);
     $order2 = $stmt2->fetch(PDO::FETCH_ASSOC);
 
-    var_dump($order2);
+    
 } catch (PDOException $e) {
     die($e->getMessage());
 }
