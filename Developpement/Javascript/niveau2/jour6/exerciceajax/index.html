@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+  </head>
+  <body>
+    <header class="container">
+       <h1><i class="fas fa-flask"></i></i> Exercice AJAX</h1>
+   </header>
+
+    <main>
+        <section id="section1">
+            <p>Résultats...</p>
+        </section>
+
+        <form>
+            <fieldset>
+                <legend><i class="fa fa-question-circle"></i> Votre choix</legend>
+                <ul>
+                  <li>
+                        <input type="radio" name="ok" value="1" id="gethtmldata">
+                        <label for="">Récupérer un contenu HTML du serveur</label>
+                  </li>
+                  <li>
+                        <input type="radio" name="ok" value="2"  id="getjsondata">
+                        <label for="">Récupérer un contenu JSON du serveur</label>
+                  </li>
+                  <li>
+                      <input type="radio" name="ok" value="3"  id="getmovies" >
+                      <label for="">Récupérer les films</label>
+                  </li>
+                  <li>
+                        <button type="submit">Exécuter</button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+  </body>
+</html>

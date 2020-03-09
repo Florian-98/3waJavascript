@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1 class="text-danger alert alert-dark">AJAX</h1>
+    <form>
+      <div class="d-flex justify-content-center w-50">
+        <div class="form-group col">
+          <label for="inputAddress">Nom</label>
+          <input type="text" class="form-control" id="nom" name="nom">
+        </div>
+
+
+          <div class="form-group col">
+            <label for="inputCity">Prenom</label>
+            <input type="text" class="form-control" id="prenom" name="prenom">
+          </div>
+          <div>
+            <button type="submit" class="btn btn-outline-success">Valider</button>
+          </div>
+      </div>
+    </form>
+    <p id="response"></p>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>
