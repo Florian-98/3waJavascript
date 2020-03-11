@@ -1,0 +1,10 @@
+body {
+  background-image: url('https://www.canva.com/fr_fr/decouvrir/wp-content/uploads/sites/14/2018/11/giphy-3.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* text-align: center; */
+}
+
+canvas {
+  margin-top: 5em;
+}

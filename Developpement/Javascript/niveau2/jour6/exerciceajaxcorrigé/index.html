@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Exo Ajax</title>
+
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+      <h1>Exercice AJAX</h1>
+
+      <form>
+        <fieldset>
+
+          <legend>Votre choix</legend>
+
+          <p>
+            <label>
+              <input type="radio" id="html" name="choice" value="html">
+              Récupérer un contenu HTML du serveur
+            </label>
+          </p>
+
+
+          <p>
+            <label>
+              <input type="radio" id="json" name="choice" value="json">
+              Récupérer un contenu JSON du serveur
+            </label>
+          </p>
+
+
+          <p>
+            <label>
+              <input class="film" type="radio" id="film" name="choice" value="film">
+              Récupérer les films
+            </label>
+          </p>
+
+          <input type="submit" value="Valider">
+
+
+        </fieldset>
+      </form>
+
+        <div id="response"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    </body>
+    </html>
