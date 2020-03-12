@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+  <body>
+
+    <h1 class="alert alert-warning">Ardoise magique</h1>
+    <canvas id="ardoise" width="700" height="600"></canvas>
+    <button type="button" class="alert alert-warning btn-lg" name="button" id="cacher1">Epaisseur</button>
+    <nav id='nav1'>
+      <button type="button" class="btn btn-outline-warning js-trait" id="traitFin" data-width='1'>Trait Fin</button>
+      <button type="button" class="btn btn-outline-warning js-trait" id="traitNormal" data-width='10'>Trait Normal</button>
+      <button type="button" class="btn btn-outline-warning js-trait" id="traitEpais" data-width='20'>Trait Epais</button>
+    </nav>
+    <button type="button" class="alert alert-warning btn-lg" name="button" id="cacher2">Couleurs</button>
+    <nav id='nav2'>
+      <button type="button" class="rond" data-color="blue" id="boutonbleu"></button>
+      <button type="button" class="rond" data-color="red" id="boutonrouge"></button>
+      <button type="button" class="rond" data-color="green" id="boutonvert"></button>
+      <button type="button" class="rond" data-color="yellow" id="boutonjaune"></button>
+      <button type="button" class="rond" data-color="pink" id="boutonrose"></button>
+      <button type="button" class="rond" data-color="purple" id="boutonviolet"></button>
+    </nav>
+    <button type="button" class="alert alert-warning btn-lg" name="button" id="cacher3">Gomme</button>
+    <nav id="nav3">
+      <button type="button" class="btn btn-outline-warning js-gomme" id="boutonGommeFin" data-size='5'><i class="fas fa-eraser"></i></button>
+      <button type="button" class="btn btn-outline-warning js-gomme" id="boutonGommeNormal" data-size='10'><i class="fas fa-eraser"></i></button>
+      <button type="button" class="btn btn-outline-warning js-gomme" id="boutonGommeEpais" data-size='15' ><i class="fas fa-eraser"></i></button>
+    </nav>
+    <button type="button" class="alert alert-danger btn-lg" name="button" id="cacher4">Tout effacer</button>
+    <nav id="nav4">
+      <button type="button" class="btn btn-outline-danger" id="boutonReset"><i class="fas fa-skull-crossbones"></i></button>
+    </nav>
+      <button type="button" class="alert alert-warning btn-lg" name="button" id="cacher5">Palette</button>
+      <div id="nav5">
+        <input type="color" name="" value="" class="btn btn-outline-warning" id="colorpicker">
+      </div>
+
+
+
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>

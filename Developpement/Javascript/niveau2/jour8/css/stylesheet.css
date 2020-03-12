@@ -1,0 +1,155 @@
+canvas {
+  border: 20px ridge grey;
+  width: 700px;
+  height: 600px;
+  margin-left: 5em;
+  margin-top: 5em;
+  box-shadow: 4px 5px 3px 5px black;
+  background-color: white;
+}
+body {
+  background-image: url('../4f82a29028d904e79402c4714bc7b785.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 16px;
+  /* background-position: center; */
+}
+nav {
+  float: right;
+  display: flex;
+  position: absolute;
+  top: 32%;
+  left: 60%;
+  display: none;
+}
+
+button {
+  margin: 1em;
+}
+
+#cacher1 {
+  float: right;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+
+}
+
+#nav2 {
+  float: right;
+  display: flex;
+  position: absolute;
+  top: 44%;
+  left: 60%;
+  display: none;
+
+}
+
+#nav3 {
+  /* float: right; */
+  display: flex;
+  flex-grow: 1;
+  /* position: absolute; */
+  top: 54%;
+  left: 60%;
+  display: none;
+}
+
+.rond {
+  border-radius: 50%;
+  padding: 1em;
+}
+
+#boutonbleu{
+  background-color: blue;
+}
+
+#boutonrouge{
+  background-color: red;
+}
+
+#boutonvert{
+  background-color: green;
+}
+#boutonjaune{
+  background-color: yellow;
+}
+
+#boutonrose{
+  background-color: pink;
+}
+
+#boutonviolet{
+  background-color: purple;
+}
+
+#cacher2 {
+  float: right;
+  display: flex;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+}
+
+#cacher3 {
+  float: right;
+  display: flex;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+}
+
+#cacher5 {
+  float: right;
+  display: flex;
+  position: absolute;
+  top: 66%;
+  left: 50%;
+
+}
+
+#nav5 {
+  float: right;
+  display: flex;
+  position: absolute;
+  top: 71%;
+  left: 60%;
+  display: none;
+
+}
+
+#boutonGommeFin i {
+  font-size: 1em;
+}
+
+#boutonGommeNormal i {
+  font-size: 2em;
+}
+
+
+#boutonGommeEpais i {
+  font-size: 3em;
+}
+
+#boutonReset i {
+font-size: 2em;
+}
+
+#nav4 {
+  float: right;
+  display: flex;
+  position: absolute;
+  top: 79%;
+  left: 61%;
+  display: none;
+}
+
+#cacher4 {
+  float: right;
+  display: flex;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+}
